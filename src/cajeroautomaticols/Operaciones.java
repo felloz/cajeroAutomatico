@@ -30,6 +30,8 @@ public class Operaciones {
     }
     
     public String excedeMonto(){
-        return "Su monto excede el solicitado";
+        return "----------------------\n"
+                + "El monto solicitado excede su saldo actual\n"
+                + "--------------------------";
     }
 }
