@@ -34,4 +34,11 @@ public class Operaciones {
                 + "El monto solicitado excede su saldo actual\n"
                 + "--------------------------";
     }
+    
+    public void opcionSeleccionada(int opcion){
+        if(opcion == 4){
+            System.out.println("Ha salido del sistema! " + opcion);
+            System.exit(0);
+        }
+    }
 }

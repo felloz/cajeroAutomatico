@@ -25,14 +25,17 @@ public class Main {
         Operaciones operando = new Operaciones();
         Scanner dato = new Scanner(System.in);
         int i = 0;
+        
         for (i = 0; i < 3; i++) {
-            out.println("Bienvenido, Por favor ingrese su contraseña");
+            
+            out.println("Por favor ingrese su contraseña");
             claveUsuario = dato.next();
             if (i == 2) {
                 out.println("Numero de Intentos Excedido");
             }
-
+            
             if (autentico.validarClave(claveUsuario) == true) {
+                
                 while (opcionSeleccionada != 4) {
                     out.println("Por favor Seleccione una opción: \n"
                             + "1. Consulta de Saldo.\n"
@@ -71,17 +74,22 @@ public class Main {
                                     + "---------------------------");
                             break;
                         case 4:
-                            out.println("Ha salido del sistema!");
+                            out.println("Saliendo...!");
+                            operando.opcionSeleccionada(opcionSeleccionada);
                             break;
                         //optional
                         default:
-                            out.println("Opcion no valida, intente de nuevo");
+                            out.println("------------------------\n"
+                                    + "Opcion no valida, intente de nuevo\n"
+                                    + "----------------------------");
                     }
 
                 }
+                }
 
-            }
+            
         }
+       
     }
 
 }

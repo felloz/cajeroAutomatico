@@ -11,7 +11,7 @@ package cajeroautomaticols;
  */
 public class Autenticar {
     
-    private String claveUsuario = "1234";
+    private String claveUsuario = "123423";
     
     public String getClaveUsuario(){
         return claveUsuario;
