@@ -28,7 +28,7 @@ public class Main {
         
         for (i = 0; i < 3; i++) {
             
-            out.println("Por favor ingrese su contraseña");
+            out.print("Por favor ingrese su contraseña: ");
             claveUsuario = dato.next();
             if (i == 2) {
                 out.println("Numero de Intentos Excedido");

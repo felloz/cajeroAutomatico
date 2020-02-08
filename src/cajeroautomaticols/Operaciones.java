@@ -37,7 +37,9 @@ public class Operaciones {
     
     public void opcionSeleccionada(int opcion){
         if(opcion == 4){
-            System.out.println("Ha salido del sistema! " + opcion);
+            System.out.println("-----------------------");
+            System.out.println("Ha salido del sistema! ");
+            System.out.println("-----------------------");
             System.exit(0);
         }
     }
